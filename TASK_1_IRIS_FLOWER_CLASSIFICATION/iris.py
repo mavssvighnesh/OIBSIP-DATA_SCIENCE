@@ -1,3 +1,7 @@
+#TASK-1 IRIS FLOWER CLASSIFICATION USING PYTHON 
+#OASIS INFOBYTE DATA SCIENCE INTERNSHIP 
+#MANDALEEKA AVSS VIGHNESH 
+
 # Import necessary libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -7,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the Iris dataset
-iris_data = pd.read_csv('V:/Iris.csv')
+iris_data = pd.read_csv('V:/Iris.csv') #change the path according to your file location 
 
 # Displaying basic information about the dataset
 iris_data.info()  # Show information about columns and their data types
@@ -23,6 +27,11 @@ iris_data.isnull().sum()  # Summarize missing values in each column
 species_count = iris_data['Species'].value_counts()
 print("All individual species column of the dataset: ")
 print(species_count)
+
+#printing all the unique values in the dataset 
+print("getting all the unique values for species in the dataset ")
+unique=iris_data['Species'].unique()
+print(unique)
 
 # Visualizing Sepal Length, Sepal Width, and Petal Width by species
 plt.bar(iris_data['Species'], iris_data['SepalLengthCm'])
