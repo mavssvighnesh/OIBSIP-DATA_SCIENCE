@@ -32,6 +32,7 @@ plt.ylabel("Sepal Length")
 plt.grid(True)
 plt.show()
 
+#graph between the sepal width and species they are 
 plt.bar(iris_data['Species'], iris_data['SepalWidthCm'])
 plt.title("Sepal Width VS Species")
 plt.xlabel("Name of the Species")
@@ -39,6 +40,7 @@ plt.ylabel("Sepal Width")
 plt.grid(True)
 plt.show()
 
+#Graph between the petal width and the species they are 
 plt.bar(iris_data['Species'], iris_data['PetalWidthCm'])
 plt.title("Petal Width VS Species")
 plt.xlabel("Name of the Species")
